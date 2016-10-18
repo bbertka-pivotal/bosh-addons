@@ -1,0 +1,24 @@
+releases:
+- name: os-conf
+  version: 7
+
+addons:
+- name: misc
+  jobs:
+  - name: login_banner
+    release: os-conf
+  properties:
+    login_banner:
+      text: |
+        Welcome to Pivotal Cloud Foundry's
+
+        BBBB   OOO   SSS  H  H    III  OOO
+        B   B O   O S     H  H     I  O   O
+        BBBB  O   O  SSS  HHHH     I  O   O
+        B   B O   O     S H  H ..  I  O   O
+        BBBB   OOO  SSSS  H  H .. III  OOO
+
+        This computer system is for authorized use only. All activity is logged and
+        regularly checked by system administrators. Individuals attempting to connect to,
+        port-scan, deface, hack, or otherwise interfere with any services on this system
+        will be reported.
